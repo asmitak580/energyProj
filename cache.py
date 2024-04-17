@@ -20,6 +20,7 @@ class Cache:
         for block in set_cache:
             if block[0] == tag:  # tag match, cache hit
                 if is_write:
+                    block[1] = True  # Mark the block as dirty
                     self.energy_consumed += self.write_energy()
                 else:
                     self.energy_consumed += self.read_energy()
@@ -32,11 +33,15 @@ class Cache:
             self.energy_consumed += self.read_energy()
 
         if len(set_cache) < self.associativity:  # if set is not full
-            set_cache.append((tag, address))
+            set_cache.append([tag, True])  # Append a new block and mark it as dirty
         else:
             # Apply random replacement policy
             random_index = random.randint(0, self.associativity - 1)
-            set_cache[random_index] = (tag, address)
+            replaced_block = set_cache[random_index]
+            if replaced_block[1]:  # If the replaced block is dirty, write it back to the next level
+                self.energy_consumed += self.write_energy()
+                replaced_block[1] = False  # Mark the replaced block as clean
+            set_cache[random_index] = [tag, True]  # Replace the block and mark it as dirty
 
         return False
 
