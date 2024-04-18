@@ -90,11 +90,6 @@ class DRAM:
         else:
             self.energy_consumed += self.read_energy()
 
-        # Add transfer energy for memory access
-        # self.energy_consumed += self.transfer_energy
-
-        # Simulate memory access time
-        # return self.write_time if access_type == '1' else self.read_time
         return self.energy_consumed
 
     def read_energy(self):
