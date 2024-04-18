@@ -1,5 +1,7 @@
 import os
-from cache import Cache, L1Cache, L2Cache, DRAM
+from l1_cache import L1Cache
+from l2_cache import L2Cache
+from dram import DRAM
 
 
 def read_addresses(trace_file):
