@@ -11,32 +11,38 @@ class L1Cache:
         self.l2_cache_idle_power = l2_cache_idle_power
         self.dram_idle_power = dram_idle_power
         self.num_data_sets = data_size // (block_size)
-        self.data_cache = [[] for _ in range(self.num_data_sets)]
+        self.data_cache = [[CacheLine() for _ in range(self.num_data_sets)]]
         self.num_instr_sets = data_size // (block_size)
-        self.instruction_cache = [[] for _ in range(self.num_instr_sets)]
+        self.instruction_cache = [[CacheLine() for _ in range(self.num_instr_sets)]]
         self.energy_consumed = 0.0
 
     def access(self, access_type, address, data=None):
-        if access_type == '2':  # Instruction fetch
-            tag, index, _ = self.extract_address(address)
-            set_cache = self.instruction_cache[index]
-        else:  # Data read or write
-            tag, index, _ = self.extract_address(address)
+        
+
+        if access_type == '1': #it's a write, check both caches
+            # for block in self.instruction_cache:
+            cache_line = self.instruction_cache[index]
+            if cache_line.tag == tag:
+                cache_line.dirt = True
+                self.energy_consumed += self.write_energy()
+                return True, self.energy_consumed
+            # for block in self.data_cache:
             set_cache = self.data_cache[index]
-        if access_type == '1':
-            for block in self.instruction_cache:
-                if block[0] == tag:
-                    block[1] = True
-                    self.energy_consumed += self.write_energy()
-                    return True, self.energy_consumed
-            for block in self.data_cache:
-                if block[0] == tag:
-                    block[1] = True
+            for cache_line in set_cache:
+                if cache_line.tag == tag:
+                    cache_line.dirty = True
                     self.energy_consumed += self.write_energy()
                     return True, self.energy_consumed
         else: #it is a read
-            for block in set_cache:
-                if block[0] == tag:  # tag match, cache hit
+            if access_type == '2':  # Instruction fetch
+                tag, index, _ = self.extract_address(address)
+                set_cache = self.instruction_cache[index]
+            else:  # Data read or write
+                tag, index, _ = self.extract_address(address)
+                set_cache = self.data_cache[index]
+        
+            for cache_line in set_cache:
+                if cache_line.tag == tag:  # tag match, cache hit
                     self.energy_consumed += self.read_energy()
                     return True, self.energy_consumed
         return False, self.energy_consumed
@@ -105,3 +111,8 @@ class L1Cache:
     @staticmethod
     def log2(x):
         return x.bit_length() - 1 if x > 0 else 0
+    
+class CacheLine:
+    def __init__(self, tag=None, dirty=False):
+        self.tag = tag
+        self.dirty = dirty
