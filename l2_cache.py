@@ -25,9 +25,9 @@ class L2Cache:
                     # energy += self.write_energy()
                 # else:
                     # energy += self.read_energy()
-                return True
+                return (True, self.read_write_energy())
 
-        return False, self.read_write_energy()
+        return (False, self.read_write_energy())
     
     #handles putting an address in the cache and writing to it if there was a miss
     def cache_miss_handler(self, access_type, address, data=None):

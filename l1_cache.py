@@ -11,22 +11,19 @@ class L1Cache:
         self.l2_cache_idle_power = l2_cache_idle_power
         self.dram_idle_power = dram_idle_power
         self.num_data_sets = data_size // (block_size)
-        self.data_cache = [[CacheLine() for _ in range(self.num_data_sets)]]
+        self.data_cache = [CacheLine() for _ in range(self.num_data_sets)]
         self.num_instr_sets = data_size // (block_size)
-        self.instruction_cache = [[CacheLine() for _ in range(self.num_instr_sets)]]
+        self.instruction_cache = [CacheLine() for _ in range(self.num_instr_sets)]
+
         # self.energy_consumed = 0.0
 
     #accessing a address in the cache, returns if it was a miss or hit and the energy consumed
     def access(self, access_type, address, data=None):
         tag, index, _ = self.extract_address(address)
-        print("ADDY: ", address)
-        print("Index:", index)
-        print("Tag:", tag)
-        print("Instruciton cache length:", len(self.instruction_cache))
         if access_type == '2':  # Instruction fetch
-            set_cache = self.instruction_cache[index]
+            cache_line = self.instruction_cache[index]
         else:  # Data read or write
-            set_cache = self.data_cache[index]
+            cache_line = self.data_cache[index]
 
         if access_type == '1': #it's a write      
             # for block in self.data_cache:
@@ -36,11 +33,11 @@ class L1Cache:
                 # self.energy_consumed += self.write_energy()
                 return True, self.read_write_energy()
         else: #it is a read
-            cache_line = set_cache[index]
-            for cache_line in set_cache:
-                if cache_line.tag == tag:  # tag match, cache hit
-                    # self.energy_consumed += self.read_energy()
-                    return True, self.read_write_energy()
+            # cache_line = set_cache[index]
+            # for cache_line in set_cache:
+            if cache_line.tag == tag:  # tag match, cache hit
+                # self.energy_consumed += self.read_energy()
+                return True, self.read_write_energy()
         return False, self.read_write_energy()
     
     #handles putting an address in the cache and writing to it if there was a miss
@@ -48,23 +45,23 @@ class L1Cache:
         # Cache miss
         tag, index, _ = self.extract_address(address)
         if access_type == '2':  # Instruction fetch
-            set_cache = self.instruction_cache[index]
+            set_cache = self.instruction_cache
         else:  # Data read or write
-            set_cache = self.data_cache[index]
+            set_cache = self.data_cache
 
         # if access_type == '1':  # Write access
         # self.energy_consumed += self.write_energy()
 
         # Apply random replacement policy
-        random_index = random.randint(0, len(set_cache) - 1)
-        replaced_block = set_cache[random_index]
-        if replaced_block.dirty:  # Write back if dirty
+        # random_index = random.randint(0, len(set_cache) - 1)
+        replaced_cache_line = set_cache[index]
+        if replaced_cache_line.dirty:  # Write back if dirty
             # self.energy_consumed += self.write_energy()
-            replaced_block.dirty = False
+            replaced_cache_line.dirty = False
 
         # Update cache line with new tag
-        replaced_block.tag = tag
-        replaced_block.dirty = (access_type == '1')  # Set dirty bit if it's a write access
+        replaced_cache_line.tag = tag
+        replaced_cache_line.dirty = (access_type == '1')  # Set dirty bit if it's a write access
         
         return self.read_write_energy()
 
