@@ -15,8 +15,6 @@ class L1Cache:
         self.num_instr_sets = data_size // (block_size)
         self.instruction_cache = [CacheLine() for _ in range(self.num_instr_sets)]
 
-        # self.energy_consumed = 0.0
-
     #accessing a address in the cache, returns if it was a miss or hit and the energy consumed
     def access(self, access_type, address, data=None):
         tag, index, _ = self.extract_address(address)
@@ -26,17 +24,11 @@ class L1Cache:
             cache_line = self.data_cache[index]
 
         if access_type == '1': #it's a write      
-            # for block in self.data_cache:
             cache_line = self.data_cache[index]
             if cache_line.tag == tag:
-                cache_line.dirty = True
-                # self.energy_consumed += self.write_energy()
                 return True, self.read_write_energy()
         else: #it is a read
-            # cache_line = set_cache[index]
-            # for cache_line in set_cache:
             if cache_line.tag == tag:  # tag match, cache hit
-                # self.energy_consumed += self.read_energy()
                 return True, self.read_write_energy()
         return False, self.read_write_energy()
     
@@ -49,35 +41,24 @@ class L1Cache:
         else:  # Data read or write
             set_cache = self.data_cache
 
-        # if access_type == '1':  # Write access
-        # self.energy_consumed += self.write_energy()
-
-        # Apply random replacement policy
-        # random_index = random.randint(0, len(set_cache) - 1)
         replaced_cache_line = set_cache[index]
-        if replaced_cache_line.dirty:  # Write back if dirty
-            # self.energy_consumed += self.write_energy()
-            replaced_cache_line.dirty = False
 
         # Update cache line with new tag
         replaced_cache_line.tag = tag
-        replaced_cache_line.dirty = (access_type == '1')  # Set dirty bit if it's a write access
+        # replaced_cache_line.dirty = (access_type == '1')  # Set dirty bit if it's a write access
         
         return self.read_write_energy()
 
-
+    #returns the tag and index for a memory address
     def extract_address(self, address):
         index_bits = self.log2(self.num_data_sets)
         block_offset_bits = self.log2(self.block_size)
-        # tag_bits = 64 - index_bits - block_offset_bits
         tag = address >> (index_bits + block_offset_bits)
         index = (address >> block_offset_bits) & ((1 << index_bits) - 1)
         
         return tag, index, address
 
-    # def read_energy(self):
-    #     return self.read_write_time * (self.active_power + self.l2_cache_idle_power + self.dram_idle_power)
-
+    #return the active L1 energy consumption with idle L2 and DRAM
     def read_write_energy(self):
         return self.read_write_time * (self.active_power + self.l2_cache_idle_power + self.dram_idle_power)
     
@@ -94,6 +75,5 @@ class L1Cache:
         return x.bit_length() - 1 if x > 0 else 0
     
 class CacheLine:
-    def __init__(self, tag=None, dirty=False):
+    def __init__(self, tag=None):
         self.tag = tag
-        self.dirty = dirty

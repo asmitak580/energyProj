@@ -1,0 +1,315 @@
+Output for trace file: 048.ora.din
+Associativity: 2
+Average energy across 10 runs: 0.002435565900026627
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0008277489999829653
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 4
+Average energy across 10 runs: 0.002435565900026627
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0008277489999829653
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.002435565900026627
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0008277489999829653
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 015.doduc.din
+Associativity: 2
+Average energy across 10 runs: 0.0036565031500924764
+Standard Deviation of energy across 10 runs: 8.407260768378825e-07
+Average time across 10 runs: 0.0011356379999705765
+Standard Deviation of time across 10 runs: 1.6200908753364566e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.0036509403000918234
+Standard Deviation of energy across 10 runs: 8.115836440330889e-07
+Average time across 10 runs: 0.0011345734999706006
+Standard Deviation of time across 10 runs: 1.573707582604552e-07
+
+Associativity: 8
+Average energy across 10 runs: 0.003646737500091343
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0011337574999706022
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 022.li.din
+Associativity: 2
+Average energy across 10 runs: 0.003482970500054472
+Standard Deviation of energy across 10 runs: 2.3886998186309236e-06
+Average time across 10 runs: 0.0011192589999713181
+Standard Deviation of time across 10 runs: 4.6466953609099786e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.0034558276000513062
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.001114045999971383
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.0034558276000513062
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.001114045999971383
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 026.compress.din
+Associativity: 2
+Average energy across 10 runs: 0.006012498000250585
+Standard Deviation of energy across 10 runs: 1.273400866551116e-05
+Average time across 10 runs: 0.0017000439999561522
+Standard Deviation of time across 10 runs: 2.461095284620851e-06
+
+Associativity: 4
+Average energy across 10 runs: 0.006001951450249252
+Standard Deviation of energy across 10 runs: 7.056752897668925e-06
+Average time across 10 runs: 0.001698090499956258
+Standard Deviation of time across 10 runs: 1.3681789397244662e-06
+
+Associativity: 8
+Average energy across 10 runs: 0.006015957650250866
+Standard Deviation of energy across 10 runs: 7.704435543162777e-06
+Average time across 10 runs: 0.0017008044999562565
+Standard Deviation of time across 10 runs: 1.4932962234949734e-06
+
+
+
+Output for trace file: 085.gcc.din
+Associativity: 2
+Average energy across 10 runs: 0.0037513517001020076
+Standard Deviation of energy across 10 runs: 5.139601785855538e-06
+Average time across 10 runs: 0.0011559464999722682
+Standard Deviation of time across 10 runs: 9.98373121051783e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.003659578250091426
+Standard Deviation of energy across 10 runs: 2.5010913537403766e-06
+Average time across 10 runs: 0.0011381999999725138
+Standard Deviation of time across 10 runs: 4.878481662623494e-07
+
+Associativity: 8
+Average energy across 10 runs: 0.0036483821000901306
+Standard Deviation of energy across 10 runs: 1.6327523254189036e-06
+Average time across 10 runs: 0.001136034499972619
+Standard Deviation of time across 10 runs: 3.1854879269829837e-07
+
+
+
+Output for trace file: 094.fpppp.din
+Associativity: 2
+Average energy across 10 runs: 0.0037954098000892228
+Standard Deviation of energy across 10 runs: 2.8584465267568676e-06
+Average time across 10 runs: 0.001181454499973745
+Standard Deviation of time across 10 runs: 5.525707596600385e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.003714331400079729
+Standard Deviation of energy across 10 runs: 4.7427734507529714e-07
+Average time across 10 runs: 0.0011659064999738737
+Standard Deviation of time across 10 runs: 9.183318209306204e-08
+
+Associativity: 8
+Average energy across 10 runs: 0.003711790900079428
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.001165421499973873
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 008.espresso.din
+Associativity: 2
+Average energy across 10 runs: 0.0025590604000350382
+Standard Deviation of energy across 10 runs: 6.350245402816086e-07
+Average time across 10 runs: 0.0008574564999815024
+Standard Deviation of time across 10 runs: 1.224518045709385e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.0025574209000348474
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0008571414999815222
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.0025574209000348474
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0008571414999815222
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 013.spice2g6.din
+Associativity: 2
+Average energy across 10 runs: 0.002839981100040426
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009374459999783385
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 4
+Average energy across 10 runs: 0.002839981100040426
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009374459999783385
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.002839981100040426
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009374459999783385
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 047.tomcatv.din
+Associativity: 2
+Average energy across 10 runs: 0.0071314921004315785
+Standard Deviation of energy across 10 runs: 3.6824639234645023e-06
+Average time across 10 runs: 0.0018685924999641446
+Standard Deviation of time across 10 runs: 7.091787112125332e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.0071101032004290896
+Standard Deviation of energy across 10 runs: 2.2720253938050135e-06
+Average time across 10 runs: 0.001864459499964678
+Standard Deviation of time across 10 runs: 4.390709889442439e-07
+
+Associativity: 8
+Average energy across 10 runs: 0.007100914050428007
+Standard Deviation of energy across 10 runs: 3.289365280678792e-06
+Average time across 10 runs: 0.0018626839999647958
+Standard Deviation of time across 10 runs: 6.371352987299547e-07
+
+
+
+Output for trace file: 089.su2cor.din
+Associativity: 2
+Average energy across 10 runs: 0.00410568185010638
+Standard Deviation of energy across 10 runs: 7.41424359379547e-07
+Average time across 10 runs: 0.0012579264999702637
+Standard Deviation of time across 10 runs: 1.4458849654397236e-07
+
+Associativity: 4
+Average energy across 10 runs: 0.004077955300103049
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.001252672999970363
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.004069210300101996
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0012510229999703859
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 090.hydro2d.din
+Associativity: 2
+Average energy across 10 runs: 0.005067978700265046
+Standard Deviation of energy across 10 runs: 8.341333963021597e-06
+Average time across 10 runs: 0.001400607999961309
+Standard Deviation of time across 10 runs: 1.6252644229284119e-06
+
+Associativity: 4
+Average energy across 10 runs: 0.004937829600249658
+Standard Deviation of energy across 10 runs: 1.2462263466251925e-05
+Average time across 10 runs: 0.001375680999961402
+Standard Deviation of time across 10 runs: 2.4307383423304697e-06
+
+Associativity: 8
+Average energy across 10 runs: 0.004939997850249933
+Standard Deviation of energy across 10 runs: 8.428266954931708e-06
+Average time across 10 runs: 0.001376083499961399
+Standard Deviation of time across 10 runs: 1.6384838011595775e-06
+
+
+
+Output for trace file: 093.nasa7.din
+Associativity: 2
+Average energy across 10 runs: 0.0035379309001135175
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0010794239999752822
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 4
+Average energy across 10 runs: 0.003484400900107073
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0010693239999755475
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.00345922590010405
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0010645739999755527
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 039.wave5.din
+Associativity: 2
+Average energy across 10 runs: 0.002317864200033161
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.000786016999984462
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 4
+Average energy across 10 runs: 0.002317864200033161
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.000786016999984462
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.002317864200033161
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.000786016999984462
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 023.eqntott.din
+Associativity: 2
+Average energy across 10 runs: 0.003074290400060166
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009895714999762395
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 4
+Average energy across 10 runs: 0.003074290400060166
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009895714999762395
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.003074290400060166
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009895714999762395
+Standard Deviation of time across 10 runs: 0.0
+
+
+
+Output for trace file: 034.mdljdp2.din
+Associativity: 2
+Average energy across 10 runs: 0.0027828617000550484
+Standard Deviation of energy across 10 runs: 1.8650644912056784e-07
+Average time across 10 runs: 0.0009062504999800741
+Standard Deviation of time across 10 runs: 3.607091780245529e-08
+
+Associativity: 4
+Average energy across 10 runs: 0.0027801091000547186
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009057284999800739
+Standard Deviation of time across 10 runs: 0.0
+
+Associativity: 8
+Average energy across 10 runs: 0.0027801091000547186
+Standard Deviation of energy across 10 runs: 0.0
+Average time across 10 runs: 0.0009057284999800739
+Standard Deviation of time across 10 runs: 0.0
+
+
+
