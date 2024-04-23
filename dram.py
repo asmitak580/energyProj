@@ -7,10 +7,11 @@ class DRAM:
         self.l1_idle = l1_idle
         self.l2_idle = l2_idle
         self.access_count = 0
+        self.energy_consumed = 0
 
     def access(self, access_type, address, data=None):
         self.access_count += 1
-        return self.read_write_energy()
+        self.energy_consumed += self.read_write_energy()
     
     #return energy used to read from dram including idle l1 and l2 power
     def read_write_energy(self):

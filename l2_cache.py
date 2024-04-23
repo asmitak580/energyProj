@@ -15,8 +15,10 @@ class L2Cache:
         self.cache = [[] for _ in range(self.num_sets)]
         self.access_count = 0
         self.miss_count = 0
+        self.energy_consumed = 0
 
     def access(self, access_type, address, data=None):
+        self.energy_consumed += self.read_write_energy()
         self.access_count += 1
         tag, index, _ = self.extract_address(address)
         set_cache = self.cache[index]
@@ -24,13 +26,14 @@ class L2Cache:
             if block[0] == tag:  # tag match, cache hit
                 if access_type == '1':  # Write access
                     block[1] = True  # Mark the block as dirty
-                return (True, self.read_write_energy())
+                return True
 
-        return (False, self.read_write_energy())
+        return False
     
     #handles putting an address in the cache and writing to it if there was a miss
     def cache_miss_handler(self, access_type, address, data=None):
         # Cache miss
+        self.energy_consumed += self.read_write_energy()
         self.miss_count += 1
         need_to_write_back = False
         tag, index, _ = self.extract_address(address)
@@ -47,7 +50,7 @@ class L2Cache:
                 replaced_block[1] = False  # Mark the replaced block as clean
             set_cache[random_index] = [tag, True]  # Replace the block and mark it as dirty
 
-        return need_to_write_back, self.read_write_energy()
+        return need_to_write_back
 
     #returns the tag and index for a memory address
     def extract_address(self, address):

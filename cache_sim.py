@@ -19,140 +19,97 @@ def read_addresses(trace_file):
     return addresses
 
 #simulates the energy consumed for L1, L2 caches and DRAM read/writes for a given list of memory accesses
+#and returns the total time in seconds
 def simulate_cache(addresses, l1_cache, l2_cache, dram):
-    total_l1_energy = 0
-    total_l2_energy = 0
-    total_dram_energy = 0
-    total_energy = 0
+
     total_time = 0
-    # l1_misses = 0
-    # l2_misses = 0
-    # count = 0
+
     #loop through all the addresses
     #for each address
     for access_type, address, data in addresses:
-        # count += 1
         #if it is a read == '0' or instruction fetch '2'
         if access_type == '0' or access_type == '2':
             #l1 access
-            hit, l1_active_energy = l1_cache.access(access_type, address, data)
+            hit = l1_cache.access(access_type, address, data)
 
-            total_l1_energy += l1_active_energy
-            total_energy += l1_active_energy
             total_time += l1_cache.time_to_read_write()
             #if miss
             if not hit:
-                # l1_misses += 1
                 #l2 access
-                hit, l2_active_energy = l2_cache.access(access_type, address, data)
+                hit = l2_cache.access(access_type, address, data)
 
-                total_l2_energy += l2_active_energy
-                total_energy += l2_active_energy
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    # l2_misses += 1
                     #dram access
-                    dram_active_energy = dram.access(access_type, address, data)
+                    dram.access(access_type, address, data)
 
-                    total_dram_energy += dram_active_energy
-                    total_energy += dram_active_energy
                     total_time += dram.time_to_read_write()
 
                     #l2 cache miss handler
-                    update_dram, l2_cache_miss_energy = l2_cache.cache_miss_handler(access_type, address, data)
+                    update_dram = l2_cache.cache_miss_handler(access_type, address, data)
 
-                    total_l2_energy += l2_cache_miss_energy
-                    total_energy += l2_cache_miss_energy
                     total_time += l2_cache.time_to_read_write()
                 #l1 cache miss handler
-                l1_cache_miss_energy = l1_cache.cache_miss_handler(access_type, address, data)
+                l1_cache.cache_miss_handler(access_type, address, data)
 
-                total_l1_energy += l1_cache_miss_energy
-                total_energy += l1_cache_miss_energy
                 total_time += l1_cache.time_to_read_write()
         else: #if write == '1' - write through l1 -> l2, write-back l2 -> dram
             #l1 access
-            hit, l1_active_energy = l1_cache.access(access_type, address, data)
+            hit = l1_cache.access(access_type, address, data)
 
-            total_l1_energy += l1_active_energy
-            total_energy += l1_active_energy
             total_time += l1_cache.time_to_read_write()
             #if miss
             if not hit:
-                # l1_misses += 1
                 #l2 access
-                hit, l2_active_energy = l2_cache.access(access_type, address, data)
+                hit = l2_cache.access(access_type, address, data)
 
-                total_l2_energy += l2_active_energy
-                total_energy += l2_active_energy
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    # l2_misses += 1
                     #dram access
-                    dram_active_energy = dram.access(access_type, address, data)
+                    dram.access(access_type, address, data)
 
-                    total_dram_energy += dram_active_energy
-                    total_energy += dram_active_energy
                     total_time += dram.time_to_read_write()
                     #l2 cache miss handler
-                    write_to_dram, l2_cache_miss_energy = l2_cache.cache_miss_handler(access_type, address, data)
+                    write_to_dram = l2_cache.cache_miss_handler(access_type, address, data)
 
-                    total_l2_energy += l2_cache_miss_energy
-                    total_energy += l2_cache_miss_energy
                     total_time += l2_cache.time_to_read_write()
 
                     #if dirty bit - need to write to dram
                     if write_to_dram:
                         #dram access
-                        dram_active_energy = dram.access(access_type, address, data)
+                        dram.access(access_type, address, data)
 
-                        total_dram_energy += dram_active_energy
-                        total_energy += dram_active_energy
                         total_time += dram.time_to_read_write()
                 #l1 cache miss handler
-                l1_cache_miss_energy = l1_cache.cache_miss_handler(access_type, address, data)
+                l1_cache.cache_miss_handler(access_type, address, data)
 
-                total_l1_energy += l1_cache_miss_energy
-                total_energy += l1_cache_miss_energy
                 total_time += l1_cache.time_to_read_write()
             else: #if hit
                 #l2 access - write to l2, immediate write thorugh with l1 write
-                hit, l2_active_energy = l2_cache.access(access_type, address, data)
+                hit = l2_cache.access(access_type, address, data)
 
-                total_l2_energy += l2_active_energy
-                total_energy += l2_active_energy
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    # l2_misses += 1
                     #dram access
-                    dram_active_energy = dram.access(access_type, address, data)
+                    dram.access(access_type, address, data)
 
-                    total_dram_energy += dram_active_energy
-                    total_energy += dram_active_energy
                     total_time += dram.time_to_read_write()
 
                     #l2 cache miss handler - write-back only if replaced cache line hasn't been written to dram yet
-                    write_to_dram, l2_cache_miss_energy = l2_cache.cache_miss_handler(access_type, address, data)
+                    write_to_dram = l2_cache.cache_miss_handler(access_type, address, data)
 
-                    total_l2_energy += l2_cache_miss_energy
-                    total_energy += l2_cache_miss_energy
                     total_time += l2_cache.time_to_read_write()
 
                     #if dirty bit - need to write to dram
                     if write_to_dram:
                         #dram access
-                        dram_active_energy = dram.access(access_type, address, data)
+                        dram.access(access_type, address, data)
 
-                        total_dram_energy += dram_active_energy
-                        total_energy += dram_active_energy
                         total_time += dram.time_to_read_write()
-
-
-
-    return total_energy, total_time, total_l1_energy, total_l2_energy, total_dram_energy
+    return total_time
 
 def main():
     directory = 'Traces/Spec_Benchmark'
@@ -162,13 +119,10 @@ def main():
     for filename in os.listdir(directory):
         #Check if the entry is a file
         if os.path.isfile(os.path.join(directory, filename)):
-            print("Output for trace file:", filename)
-            filename = "Traces/Spec_Benchmark/" + filename
+            print("OUTPUT FOR TRACE FILE:", filename)
+            filename = directory + "/" + filename
 
             for associativity in asc:
-                energy_data = []
-                time_data = []
-
                 # Define memory subsystem parameters
                 l1_instr_size = 32 * 1024  # 32 KB
                 l1_data_size = 32 * 1024  # 32 KB
@@ -196,27 +150,30 @@ def main():
                 # Read addresses from trace file
                 addresses = read_addresses(filename)
 
-                energy, time, l1_energy, l2_energy, dram_energy = simulate_cache(addresses, l1_cache, l2_cache, dram)
+                time = simulate_cache(addresses, l1_cache, l2_cache, dram)
+                energy = l1_cache.energy_consumed + l2_cache.energy_consumed + dram.energy_consumed
 
-                energy_data.append(energy)
-                time_data.append(time)
+                print("SIMULATION COMPLETE")
+                print("L2 Associativity: ", associativity)
+                print("Total time:", time * 1e9, "ns")
+                print("Total energy consumption", energy, "J")
+                print()
+                print("L1 cache energy consumption", l1_cache.energy_consumed, "J")
+                print("L1 data cache energy consumption", l1_cache.data_energy_consumed, "J")
+                print("L1 total data cache access:", l1_cache.data_access_count)
+                print("L1 data cache misses:", l1_cache.data_miss_count)
+                print("L1 instruction cache energy consumption", l1_cache.instruction_energy_consumed, "J")
+                print("L1 total instruction cache access:", l1_cache.instruction_access_count)
+                print("L1 instruction cache misses:", l1_cache.instruction_miss_count)
+                print()
+                print("L2 cache energy consumption", l2_cache.energy_consumed, "J")
+                print("L2 total access:", l2_cache.access_count)
+                print("L2 cache misses:", l2_cache.miss_count)
+                print()
+                print("DRAM energy consumption", dram.energy_consumed, "J")
+                print("DRAM total access:", dram.access_count)
+                print()
 
-            print("Simulation completed.")
-            print("Total time:", time * 1e9, "ns")
-            print("Total energy consumption", energy, "J")
-            print("L2 Associativity: ", associativity)
-            
-            print("L1 cache energy consumption", l1_energy, "J")
-            print("L2 cache energy consumption", l2_energy, "J")
-            print("DRAM energy consumption", dram_energy, "J")
-            print("L1 data cache misses:", l1_cache.data_miss_count)
-            
-            # print("L1 miss rate:", l1_miss / total_hit_miss * 100)
-            # print("L2 misses:", l2_miss)
-            # print("L2 miss rate:", l2_miss / total_hit_miss * 100)
-            
-            print()
-    
         print()
         print()
 

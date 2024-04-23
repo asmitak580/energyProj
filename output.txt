@@ -1,315 +1,945 @@
-Output for trace file: 048.ora.din
-Associativity: 2
-Average energy across 10 runs: 0.002435565900026627
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0008277489999829653
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 4
-Average energy across 10 runs: 0.002435565900026627
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0008277489999829653
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.002435565900026627
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0008277489999829653
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 015.doduc.din
-Associativity: 2
-Average energy across 10 runs: 0.0036565031500924764
-Standard Deviation of energy across 10 runs: 8.407260768378825e-07
-Average time across 10 runs: 0.0011356379999705765
-Standard Deviation of time across 10 runs: 1.6200908753364566e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.0036509403000918234
-Standard Deviation of energy across 10 runs: 8.115836440330889e-07
-Average time across 10 runs: 0.0011345734999706006
-Standard Deviation of time across 10 runs: 1.573707582604552e-07
-
-Associativity: 8
-Average energy across 10 runs: 0.003646737500091343
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0011337574999706022
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 022.li.din
-Associativity: 2
-Average energy across 10 runs: 0.003482970500054472
-Standard Deviation of energy across 10 runs: 2.3886998186309236e-06
-Average time across 10 runs: 0.0011192589999713181
-Standard Deviation of time across 10 runs: 4.6466953609099786e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.0034558276000513062
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.001114045999971383
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.0034558276000513062
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.001114045999971383
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 026.compress.din
-Associativity: 2
-Average energy across 10 runs: 0.006012498000250585
-Standard Deviation of energy across 10 runs: 1.273400866551116e-05
-Average time across 10 runs: 0.0017000439999561522
-Standard Deviation of time across 10 runs: 2.461095284620851e-06
-
-Associativity: 4
-Average energy across 10 runs: 0.006001951450249252
-Standard Deviation of energy across 10 runs: 7.056752897668925e-06
-Average time across 10 runs: 0.001698090499956258
-Standard Deviation of time across 10 runs: 1.3681789397244662e-06
-
-Associativity: 8
-Average energy across 10 runs: 0.006015957650250866
-Standard Deviation of energy across 10 runs: 7.704435543162777e-06
-Average time across 10 runs: 0.0017008044999562565
-Standard Deviation of time across 10 runs: 1.4932962234949734e-06
-
-
-
-Output for trace file: 085.gcc.din
-Associativity: 2
-Average energy across 10 runs: 0.0037513517001020076
-Standard Deviation of energy across 10 runs: 5.139601785855538e-06
-Average time across 10 runs: 0.0011559464999722682
-Standard Deviation of time across 10 runs: 9.98373121051783e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.003659578250091426
-Standard Deviation of energy across 10 runs: 2.5010913537403766e-06
-Average time across 10 runs: 0.0011381999999725138
-Standard Deviation of time across 10 runs: 4.878481662623494e-07
-
-Associativity: 8
-Average energy across 10 runs: 0.0036483821000901306
-Standard Deviation of energy across 10 runs: 1.6327523254189036e-06
-Average time across 10 runs: 0.001136034499972619
-Standard Deviation of time across 10 runs: 3.1854879269829837e-07
-
-
-
-Output for trace file: 094.fpppp.din
-Associativity: 2
-Average energy across 10 runs: 0.0037954098000892228
-Standard Deviation of energy across 10 runs: 2.8584465267568676e-06
-Average time across 10 runs: 0.001181454499973745
-Standard Deviation of time across 10 runs: 5.525707596600385e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.003714331400079729
-Standard Deviation of energy across 10 runs: 4.7427734507529714e-07
-Average time across 10 runs: 0.0011659064999738737
-Standard Deviation of time across 10 runs: 9.183318209306204e-08
-
-Associativity: 8
-Average energy across 10 runs: 0.003711790900079428
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.001165421499973873
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 008.espresso.din
-Associativity: 2
-Average energy across 10 runs: 0.0025590604000350382
-Standard Deviation of energy across 10 runs: 6.350245402816086e-07
-Average time across 10 runs: 0.0008574564999815024
-Standard Deviation of time across 10 runs: 1.224518045709385e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.0025574209000348474
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0008571414999815222
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.0025574209000348474
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0008571414999815222
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 013.spice2g6.din
-Associativity: 2
-Average energy across 10 runs: 0.002839981100040426
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009374459999783385
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 4
-Average energy across 10 runs: 0.002839981100040426
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009374459999783385
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.002839981100040426
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009374459999783385
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 047.tomcatv.din
-Associativity: 2
-Average energy across 10 runs: 0.0071314921004315785
-Standard Deviation of energy across 10 runs: 3.6824639234645023e-06
-Average time across 10 runs: 0.0018685924999641446
-Standard Deviation of time across 10 runs: 7.091787112125332e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.0071101032004290896
-Standard Deviation of energy across 10 runs: 2.2720253938050135e-06
-Average time across 10 runs: 0.001864459499964678
-Standard Deviation of time across 10 runs: 4.390709889442439e-07
-
-Associativity: 8
-Average energy across 10 runs: 0.007100914050428007
-Standard Deviation of energy across 10 runs: 3.289365280678792e-06
-Average time across 10 runs: 0.0018626839999647958
-Standard Deviation of time across 10 runs: 6.371352987299547e-07
-
-
-
-Output for trace file: 089.su2cor.din
-Associativity: 2
-Average energy across 10 runs: 0.00410568185010638
-Standard Deviation of energy across 10 runs: 7.41424359379547e-07
-Average time across 10 runs: 0.0012579264999702637
-Standard Deviation of time across 10 runs: 1.4458849654397236e-07
-
-Associativity: 4
-Average energy across 10 runs: 0.004077955300103049
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.001252672999970363
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.004069210300101996
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0012510229999703859
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 090.hydro2d.din
-Associativity: 2
-Average energy across 10 runs: 0.005067978700265046
-Standard Deviation of energy across 10 runs: 8.341333963021597e-06
-Average time across 10 runs: 0.001400607999961309
-Standard Deviation of time across 10 runs: 1.6252644229284119e-06
-
-Associativity: 4
-Average energy across 10 runs: 0.004937829600249658
-Standard Deviation of energy across 10 runs: 1.2462263466251925e-05
-Average time across 10 runs: 0.001375680999961402
-Standard Deviation of time across 10 runs: 2.4307383423304697e-06
-
-Associativity: 8
-Average energy across 10 runs: 0.004939997850249933
-Standard Deviation of energy across 10 runs: 8.428266954931708e-06
-Average time across 10 runs: 0.001376083499961399
-Standard Deviation of time across 10 runs: 1.6384838011595775e-06
-
-
-
-Output for trace file: 093.nasa7.din
-Associativity: 2
-Average energy across 10 runs: 0.0035379309001135175
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0010794239999752822
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 4
-Average energy across 10 runs: 0.003484400900107073
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0010693239999755475
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.00345922590010405
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0010645739999755527
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 039.wave5.din
-Associativity: 2
-Average energy across 10 runs: 0.002317864200033161
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.000786016999984462
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 4
-Average energy across 10 runs: 0.002317864200033161
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.000786016999984462
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.002317864200033161
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.000786016999984462
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 023.eqntott.din
-Associativity: 2
-Average energy across 10 runs: 0.003074290400060166
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009895714999762395
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 4
-Average energy across 10 runs: 0.003074290400060166
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009895714999762395
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.003074290400060166
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009895714999762395
-Standard Deviation of time across 10 runs: 0.0
-
-
-
-Output for trace file: 034.mdljdp2.din
-Associativity: 2
-Average energy across 10 runs: 0.0027828617000550484
-Standard Deviation of energy across 10 runs: 1.8650644912056784e-07
-Average time across 10 runs: 0.0009062504999800741
-Standard Deviation of time across 10 runs: 3.607091780245529e-08
-
-Associativity: 4
-Average energy across 10 runs: 0.0027801091000547186
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009057284999800739
-Standard Deviation of time across 10 runs: 0.0
-
-Associativity: 8
-Average energy across 10 runs: 0.0027801091000547186
-Standard Deviation of energy across 10 runs: 0.0
-Average time across 10 runs: 0.0009057284999800739
-Standard Deviation of time across 10 runs: 0.0
+OUTPUT FOR TRACE FILE: 048.ora.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 827748.9999829654 ns
+Total energy consumption 0.0024362131350079484 J
+
+L1 cache energy consumption 0.0013007644000086022 J
+L1 data cache energy consumption 0.00026060190000089977 J
+L1 total data cache access: 200231
+L1 data cache misses: 232
+L1 instruction cache energy consumption 0.0010401625000066724 J
+L1 total instruction cache access: 799771
+L1 instruction cache misses: 354
+
+L2 cache energy consumption 0.000991471854999346 J
+L2 total access: 59529
+L2 cache misses: 542
+
+DRAM energy consumption 0.00014397687999999988 J
+DRAM total access: 542
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 827748.9999829654 ns
+Total energy consumption 0.0024362131350079484 J
+
+L1 cache energy consumption 0.0013007644000086022 J
+L1 data cache energy consumption 0.00026060190000089977 J
+L1 total data cache access: 200231
+L1 data cache misses: 232
+L1 instruction cache energy consumption 0.0010401625000066724 J
+L1 total instruction cache access: 799771
+L1 instruction cache misses: 354
+
+L2 cache energy consumption 0.000991471854999346 J
+L2 total access: 59529
+L2 cache misses: 542
+
+DRAM energy consumption 0.00014397687999999988 J
+DRAM total access: 542
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 827748.9999829654 ns
+Total energy consumption 0.0024362131350079484 J
+
+L1 cache energy consumption 0.0013007644000086022 J
+L1 data cache energy consumption 0.00026060190000089977 J
+L1 total data cache access: 200231
+L1 data cache misses: 232
+L1 instruction cache energy consumption 0.0010401625000066724 J
+L1 total instruction cache access: 799771
+L1 instruction cache misses: 354
+
+L2 cache energy consumption 0.000991471854999346 J
+L2 total access: 59529
+L2 cache misses: 542
+
+DRAM energy consumption 0.00014397687999999988 J
+DRAM total access: 542
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 015.doduc.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1135617.4999705723 ns
+Total energy consumption 0.0036585492700067306 J
+
+L1 cache energy consumption 0.0013091455000086643 J
+L1 data cache energy consumption 0.00032190990000135377 J
+L1 total data cache access: 244807
+L1 data cache misses: 2816
+L1 instruction cache energy consumption 0.0009872356000062805 J
+L1 total instruction cache access: 755193
+L1 instruction cache misses: 4219
+
+L2 cache energy consumption 0.0016552864499980897 J
+L2 total access: 97690
+L2 cache misses: 2600
+
+DRAM energy consumption 0.0006941173199999769 J
+DRAM total access: 2613
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1134507.499970601 ns
+Total energy consumption 0.0036527727700067314 J
+
+L1 cache energy consumption 0.0013091455000086643 J
+L1 data cache energy consumption 0.00032190990000135377 J
+L1 total data cache access: 244807
+L1 data cache misses: 2816
+L1 instruction cache energy consumption 0.0009872356000062805 J
+L1 total instruction cache access: 755193
+L1 instruction cache misses: 4219
+
+L2 cache energy consumption 0.0016550883899980901 J
+L2 total access: 97690
+L2 cache misses: 2588
+
+DRAM energy consumption 0.0006885388799999771 J
+DRAM total access: 2592
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1133757.4999706023 ns
+Total energy consumption 0.003648888760006732 J
+
+L1 cache energy consumption 0.0013091455000086643 J
+L1 data cache energy consumption 0.00032190990000135377 J
+L1 total data cache access: 244807
+L1 data cache misses: 2816
+L1 instruction cache energy consumption 0.0009872356000062805 J
+L1 total instruction cache access: 755193
+L1 instruction cache misses: 4219
+
+L2 cache energy consumption 0.0016549233399980904 J
+L2 total access: 97690
+L2 cache misses: 2578
+
+DRAM energy consumption 0.0006848199199999773 J
+DRAM total access: 2578
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 022.li.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1118795.9999713209 ns
+Total energy consumption 0.003482050280006476 J
+
+L1 cache energy consumption 0.001309375600008666 J
+L1 data cache energy consumption 0.0003413488000014977 J
+L1 total data cache access: 257749
+L1 data cache misses: 4827
+L1 instruction cache energy consumption 0.0009680268000061384 J
+L1 total instruction cache access: 742254
+L1 instruction cache misses: 2382
+
+L2 cache energy consumption 0.00179785663999782 J
+L2 total access: 107568
+L2 cache misses: 1360
+
+DRAM energy consumption 0.0003748180399999902 J
+DRAM total access: 1411
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1114045.9999713833 ns
+Total energy consumption 0.0034572168400064784 J
+
+L1 cache energy consumption 0.001309375600008666 J
+L1 data cache energy consumption 0.0003413488000014977 J
+L1 total data cache access: 257749
+L1 data cache misses: 4827
+L1 instruction cache energy consumption 0.0009680268000061384 J
+L1 total instruction cache access: 742254
+L1 instruction cache misses: 2382
+
+L2 cache energy consumption 0.0017971964399978212 J
+L2 total access: 107568
+L2 cache misses: 1320
+
+DRAM energy consumption 0.0003506447999999912 J
+DRAM total access: 1320
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1114045.9999713833 ns
+Total energy consumption 0.0034572168400064784 J
+
+L1 cache energy consumption 0.001309375600008666 J
+L1 data cache energy consumption 0.0003413488000014977 J
+L1 total data cache access: 257749
+L1 data cache misses: 4827
+L1 instruction cache energy consumption 0.0009680268000061384 J
+L1 total instruction cache access: 742254
+L1 instruction cache misses: 2382
+
+L2 cache energy consumption 0.0017971964399978212 J
+L2 total access: 107568
+L2 cache misses: 1320
+
+DRAM energy consumption 0.0003506447999999912 J
+DRAM total access: 1320
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 026.compress.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1699055.9999561522 ns
+Total energy consumption 0.006012984660004817 J
+
+L1 cache energy consumption 0.0013168896000087217 J
+L1 data cache energy consumption 0.00037914890000177764 J
+L1 total data cache access: 278784
+L1 data cache misses: 12869
+L1 instruction cache energy consumption 0.0009377407000059141 J
+L1 total instruction cache access: 721216
+L1 instruction cache misses: 123
+
+L2 cache energy consumption 0.0026905130599961307 J
+L2 total access: 156922
+L2 cache misses: 6090
+
+DRAM energy consumption 0.002005581999999965 J
+DRAM total access: 7550
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1697935.9999562602 ns
+Total energy consumption 0.006006772790004811 J
+
+L1 cache energy consumption 0.0013168896000087217 J
+L1 data cache energy consumption 0.00037914890000177764 J
+L1 total data cache access: 278784
+L1 data cache misses: 12869
+L1 instruction cache energy consumption 0.0009377407000059141 J
+L1 total instruction cache access: 721216
+L1 instruction cache misses: 123
+
+L2 cache energy consumption 0.00269094218999613 J
+L2 total access: 156922
+L2 cache misses: 6116
+
+DRAM energy consumption 0.00199894099999996 J
+DRAM total access: 7525
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1701885.999956254 ns
+Total energy consumption 0.006027154810004824 J
+
+L1 cache energy consumption 0.0013168896000087217 J
+L1 data cache energy consumption 0.00037914890000177764 J
+L1 total data cache access: 278784
+L1 data cache misses: 12869
+L1 instruction cache energy consumption 0.0009377407000059141 J
+L1 total instruction cache access: 721216
+L1 instruction cache misses: 123
+
+L2 cache energy consumption 0.002691932489996128 J
+L2 total access: 156922
+L2 cache misses: 6176
+
+DRAM energy consumption 0.002018332719999975 J
+DRAM total access: 7598
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 085.gcc.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1158042.4999722277 ns
+Total energy consumption 0.00376446915000684 J
+
+L1 cache energy consumption 0.0013236665000087718 J
+L1 data cache energy consumption 0.00029377660000114543 J
+L1 total data cache access: 220485
+L1 data cache misses: 5497
+L1 instruction cache energy consumption 0.0010298899000065964 J
+L1 total instruction cache access: 779515
+L1 instruction cache misses: 12708
+
+L2 cache energy consumption 0.0016521174899980957 J
+L2 total access: 97319
+L2 cache misses: 2779
+
+DRAM energy consumption 0.0007886851599999729 J
+DRAM total access: 2969
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1137992.4999725162 ns
+Total energy consumption 0.0036606634400068528 J
+
+L1 cache energy consumption 0.0013236665000087718 J
+L1 data cache energy consumption 0.00029377660000114543 J
+L1 total data cache access: 220485
+L1 data cache misses: 5497
+L1 instruction cache energy consumption 0.0010298899000065964 J
+L1 total instruction cache access: 779515
+L1 instruction cache misses: 12708
+
+L2 cache energy consumption 0.0016476611399981042 J
+L2 total access: 97319
+L2 cache misses: 2509
+
+DRAM energy consumption 0.0006893357999999771 J
+DRAM total access: 2595
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1136342.499972611 ns
+Total energy consumption 0.003652098500006854 J
+
+L1 cache energy consumption 0.0013236665000087718 J
+L1 data cache energy consumption 0.00029377660000114543 J
+L1 total data cache access: 220485
+L1 data cache misses: 5497
+L1 instruction cache energy consumption 0.0010298899000065964 J
+L1 total instruction cache access: 779515
+L1 instruction cache misses: 12708
+
+L2 cache energy consumption 0.0016473310399981048 J
+L2 total access: 97319
+L2 cache misses: 2489
+
+DRAM energy consumption 0.0006811009599999774 J
+DRAM total access: 2564
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 094.fpppp.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1180356.499973737 ns
+Total energy consumption 0.0037919204650064932 J
+
+L1 cache energy consumption 0.001317085900008723 J
+L1 data cache energy consumption 0.0003963375000019049 J
+L1 total data cache access: 299500
+L1 data cache misses: 5375
+L1 instruction cache energy consumption 0.0009207484000057882 J
+L1 total instruction cache access: 700500
+L1 instruction cache misses: 7768
+
+L2 cache energy consumption 0.0018128596849977916 J
+L2 total access: 107515
+L2 cache misses: 2322
+
+DRAM energy consumption 0.0006619748799999782 J
+DRAM total access: 2492
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1165776.4999738736 ns
+Total energy consumption 0.0037156266850065 J
+
+L1 cache energy consumption 0.001317085900008723 J
+L1 data cache energy consumption 0.0003963375000019049 J
+L1 total data cache access: 299500
+L1 data cache misses: 5375
+L1 instruction cache energy consumption 0.0009207484000057882 J
+L1 total instruction cache access: 700500
+L1 instruction cache misses: 7768
+
+L2 cache energy consumption 0.0018109451049977952 J
+L2 total access: 107515
+L2 cache misses: 2206
+
+DRAM energy consumption 0.0005875956799999813 J
+DRAM total access: 2212
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1165421.4999738734 ns
+Total energy consumption 0.0037137507000064994 J
+
+L1 cache energy consumption 0.001317085900008723 J
+L1 data cache energy consumption 0.0003963375000019049 J
+L1 total data cache access: 299500
+L1 data cache misses: 5375
+L1 instruction cache energy consumption 0.0009207484000057882 J
+L1 total instruction cache access: 700500
+L1 instruction cache misses: 7768
+
+L2 cache energy consumption 0.0018109285999977952 J
+L2 total access: 107515
+L2 cache misses: 2205
+
+DRAM energy consumption 0.0005857361999999814 J
+DRAM total access: 2205
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 008.espresso.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 857511.4999814987 ns
+Total energy consumption 0.002560173010007868 J
+
+L1 cache energy consumption 0.0013035139000086226 J
+L1 data cache energy consumption 0.0002491242000008148 J
+L1 total data cache access: 190632
+L1 data cache misses: 1002
+L1 instruction cache energy consumption 0.0010543897000067778 J
+L1 total instruction cache access: 809368
+L1 instruction cache misses: 1701
+
+L2 cache energy consumption 0.0010428189099992487 J
+L2 total access: 62380
+L2 cache misses: 802
+
+DRAM energy consumption 0.00021384019999999695 J
+DRAM total access: 805
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 857141.4999815222 ns
+Total energy consumption 0.0025582475100078684 J
+
+L1 cache energy consumption 0.0013035139000086226 J
+L1 data cache energy consumption 0.0002491242000008148 J
+L1 total data cache access: 190632
+L1 data cache misses: 1002
+L1 instruction cache energy consumption 0.0010543897000067778 J
+L1 total instruction cache access: 809368
+L1 instruction cache misses: 1701
+
+L2 cache energy consumption 0.0010427528899992489 J
+L2 total access: 62380
+L2 cache misses: 798
+
+DRAM energy consumption 0.00021198071999999703 J
+DRAM total access: 798
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 857141.4999815222 ns
+Total energy consumption 0.0025582475100078684 J
+
+L1 cache energy consumption 0.0013035139000086226 J
+L1 data cache energy consumption 0.0002491242000008148 J
+L1 total data cache access: 190632
+L1 data cache misses: 1002
+L1 instruction cache energy consumption 0.0010543897000067778 J
+L1 total instruction cache access: 809368
+L1 instruction cache misses: 1701
+
+L2 cache energy consumption 0.0010427528899992489 J
+L2 total access: 62380
+L2 cache misses: 798
+
+DRAM energy consumption 0.00021198071999999703 J
+DRAM total access: 798
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 013.spice2g6.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 937445.9999783384 ns
+Total energy consumption 0.0028409926850074298 J
+
+L1 cache energy consumption 0.0013044226000086293 J
+L1 data cache energy consumption 0.00028160080000105527 J
+L1 total data cache access: 215823
+L1 data cache misses: 793
+L1 instruction cache energy consumption 0.001022821800006544 J
+L1 total instruction cache access: 784179
+L1 instruction cache misses: 2607
+
+L2 cache energy consumption 0.001277305444998805 J
+L2 total access: 76413
+L2 cache misses: 976
+
+DRAM energy consumption 0.00025926463999999505 J
+DRAM total access: 976
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 937445.9999783384 ns
+Total energy consumption 0.0028409926850074298 J
+
+L1 cache energy consumption 0.0013044226000086293 J
+L1 data cache energy consumption 0.00028160080000105527 J
+L1 total data cache access: 215823
+L1 data cache misses: 793
+L1 instruction cache energy consumption 0.001022821800006544 J
+L1 total instruction cache access: 784179
+L1 instruction cache misses: 2607
+
+L2 cache energy consumption 0.001277305444998805 J
+L2 total access: 76413
+L2 cache misses: 976
+
+DRAM energy consumption 0.00025926463999999505 J
+DRAM total access: 976
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 937445.9999783384 ns
+Total energy consumption 0.0028409926850074298 J
+
+L1 cache energy consumption 0.0013044226000086293 J
+L1 data cache energy consumption 0.00028160080000105527 J
+L1 total data cache access: 215823
+L1 data cache misses: 793
+L1 instruction cache energy consumption 0.001022821800006544 J
+L1 total instruction cache access: 784179
+L1 instruction cache misses: 2607
+
+L2 cache energy consumption 0.001277305444998805 J
+L2 total access: 76413
+L2 cache misses: 976
+
+DRAM energy consumption 0.00025926463999999505 J
+DRAM total access: 976
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 047.tomcatv.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1869179.4999641108 ns
+Total energy consumption 0.007143700585006648 J
+
+L1 cache energy consumption 0.0013135317000086968 J
+L1 data cache energy consumption 0.0005132101000027703 J
+L1 total data cache access: 384456
+L1 data cache misses: 10321
+L1 instruction cache energy consumption 0.0008003216000048965 J
+L1 total instruction cache access: 615544
+L1 instruction cache misses: 88
+
+L2 cache energy consumption 0.0023239865249968243 J
+L2 total access: 132102
+L2 cache misses: 8703
+
+DRAM energy consumption 0.003506182360001127 J
+DRAM total access: 13199
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1864169.4999646787 ns
+Total energy consumption 0.007117707115006631 J
+
+L1 cache energy consumption 0.0013135317000086968 J
+L1 data cache energy consumption 0.0005132101000027703 J
+L1 total data cache access: 384456
+L1 data cache misses: 10321
+L1 instruction cache energy consumption 0.0008003216000048965 J
+L1 total instruction cache access: 615544
+L1 instruction cache misses: 88
+
+L2 cache energy consumption 0.0023229632149968263 J
+L2 total access: 132102
+L2 cache misses: 8641
+
+DRAM energy consumption 0.0034812122000011077 J
+DRAM total access: 13105
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1862569.4999647953 ns
+Total energy consumption 0.0071094078150066254 J
+
+L1 cache energy consumption 0.0013135317000086968 J
+L1 data cache energy consumption 0.0005132101000027703 J
+L1 total data cache access: 384456
+L1 data cache misses: 10321
+L1 instruction cache energy consumption 0.0008003216000048965 J
+L1 total instruction cache access: 615544
+L1 instruction cache misses: 88
+
+L2 cache energy consumption 0.002322633114996827 J
+L2 total access: 132102
+L2 cache misses: 8621
+
+DRAM energy consumption 0.0034732430000011015 J
+DRAM total access: 13075
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 089.su2cor.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1258207.999970272 ns
+Total energy consumption 0.004109684370006057 J
+
+L1 cache energy consumption 0.0013047008000086314 J
+L1 data cache energy consumption 0.00034574020000153024 J
+L1 total data cache access: 262819
+L1 data cache misses: 3135
+L1 instruction cache energy consumption 0.0009589606000060712 J
+L1 total instruction cache access: 737181
+L1 instruction cache misses: 481
+
+L2 cache energy consumption 0.001991328249997454 J
+L2 total access: 117717
+L2 cache misses: 2933
+
+DRAM energy consumption 0.0008136553199999719 J
+DRAM total access: 3063
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1252672.999970363 ns
+Total energy consumption 0.004080449025006059 J
+
+L1 cache energy consumption 0.0013047008000086314 J
+L1 data cache energy consumption 0.00034574020000153024 J
+L1 total data cache access: 262819
+L1 data cache misses: 3135
+L1 instruction cache energy consumption 0.0009589606000060712 J
+L1 total instruction cache access: 737181
+L1 instruction cache misses: 481
+
+L2 cache energy consumption 0.0019910476649974544 J
+L2 total access: 117717
+L2 cache misses: 2916
+
+DRAM energy consumption 0.0007847005599999731 J
+DRAM total access: 2954
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1251022.999970386 ns
+Total energy consumption 0.00407168290500606 J
+
+L1 cache energy consumption 0.0013047008000086314 J
+L1 data cache energy consumption 0.00034574020000153024 J
+L1 total data cache access: 262819
+L1 data cache misses: 3135
+L1 instruction cache energy consumption 0.0009589606000060712 J
+L1 total instruction cache access: 737181
+L1 instruction cache misses: 481
+
+L2 cache energy consumption 0.0019910476649974544 J
+L2 total access: 117717
+L2 cache misses: 2916
+
+DRAM energy consumption 0.0007759344399999735 J
+DRAM total access: 2921
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 090.hydro2d.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1401610.999961306 ns
+Total energy consumption 0.005078757370006918 J
+
+L1 cache energy consumption 0.00131666860000872 J
+L1 data cache energy consumption 0.0003422211000015042 J
+L1 total data cache access: 251312
+L1 data cache misses: 11935
+L1 instruction cache energy consumption 0.0009744475000061859 J
+L1 total instruction cache access: 748688
+L1 instruction cache misses: 887
+
+L2 cache energy consumption 0.001630859049998136 J
+L2 total access: 92311
+L2 cache misses: 6499
+
+DRAM energy consumption 0.0021312297200000623 J
+DRAM total access: 8023
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1374695.9999614046 ns
+Total energy consumption 0.00493810710500682 J
+
+L1 cache energy consumption 0.00131666860000872 J
+L1 data cache energy consumption 0.0003422211000015042 J
+L1 total data cache access: 251312
+L1 data cache misses: 11935
+L1 instruction cache energy consumption 0.0009744475000061859 J
+L1 total instruction cache access: 748688
+L1 instruction cache misses: 887
+
+L2 cache energy consumption 0.0016270133849981432 J
+L2 total access: 92311
+L2 cache misses: 6266
+
+DRAM energy consumption 0.0019944251199999563 J
+DRAM total access: 7508
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1375150.9999614013 ns
+Total energy consumption 0.004940514370006821 J
+
+L1 cache energy consumption 0.00131666860000872 J
+L1 data cache energy consumption 0.0003422211000015042 J
+L1 total data cache access: 251312
+L1 data cache misses: 11935
+L1 instruction cache energy consumption 0.0009744475000061859 J
+L1 total instruction cache access: 748688
+L1 instruction cache misses: 887
+
+L2 cache energy consumption 0.0016270298899981432 J
+L2 total access: 92311
+L2 cache misses: 6267
+
+DRAM energy consumption 0.001996815879999958 J
+DRAM total access: 7517
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 093.nasa7.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 1079423.999975282 ns
+Total energy consumption 0.003540437955007233 J
+
+L1 cache energy consumption 0.0013043394000086287 J
+L1 data cache energy consumption 0.0002598752000008944 J
+L1 total data cache access: 197029
+L1 data cache misses: 2875
+L1 instruction cache energy consumption 0.0010444642000067043 J
+L1 total instruction cache access: 802971
+L1 instruction cache misses: 463
+
+L2 cache energy consumption 0.0013674557549986344 J
+L2 total access: 79880
+L2 cache misses: 2971
+
+DRAM energy consumption 0.0008686427999999696 J
+DRAM total access: 3270
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 1069323.9999755477 ns
+Total energy consumption 0.0034867786750072353 J
+
+L1 cache energy consumption 0.0013043394000086287 J
+L1 data cache energy consumption 0.0002598752000008944 J
+L1 total data cache access: 197029
+L1 data cache misses: 2875
+L1 instruction cache energy consumption 0.0010444642000067043 J
+L1 total instruction cache access: 802971
+L1 instruction cache misses: 463
+
+L2 cache energy consumption 0.0013674557549986344 J
+L2 total access: 79880
+L2 cache misses: 2971
+
+DRAM energy consumption 0.0008149835199999718 J
+DRAM total access: 3068
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 1064573.9999755525 ns
+Total energy consumption 0.003461542875007236 J
+
+L1 cache energy consumption 0.0013043394000086287 J
+L1 data cache energy consumption 0.0002598752000008944 J
+L1 total data cache access: 197029
+L1 data cache misses: 2875
+L1 instruction cache energy consumption 0.0010444642000067043 J
+L1 total instruction cache access: 802971
+L1 instruction cache misses: 463
+
+L2 cache energy consumption 0.0013674557549986344 J
+L2 total access: 79880
+L2 cache misses: 2971
+
+DRAM energy consumption 0.0007897477199999729 J
+DRAM total access: 2973
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 039.wave5.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 786016.999984462 ns
+Total energy consumption 0.002318588170008272 J
+
+L1 cache energy consumption 0.0013010842000086046 J
+L1 data cache energy consumption 0.0002245997000006332 J
+L1 total data cache access: 172400
+L1 data cache misses: 369
+L1 instruction cache energy consumption 0.0010764845000069414 J
+L1 total instruction cache access: 827600
+L1 instruction cache misses: 465
+
+L2 cache energy consumption 0.00082013344999967 J
+L2 total access: 48947
+L2 cache misses: 743
+
+DRAM energy consumption 0.00019737051999999764 J
+DRAM total access: 743
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 786016.999984462 ns
+Total energy consumption 0.002318588170008272 J
+
+L1 cache energy consumption 0.0013010842000086046 J
+L1 data cache energy consumption 0.0002245997000006332 J
+L1 total data cache access: 172400
+L1 data cache misses: 369
+L1 instruction cache energy consumption 0.0010764845000069414 J
+L1 total instruction cache access: 827600
+L1 instruction cache misses: 465
+
+L2 cache energy consumption 0.00082013344999967 J
+L2 total access: 48947
+L2 cache misses: 743
+
+DRAM energy consumption 0.00019737051999999764 J
+DRAM total access: 743
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 786016.999984462 ns
+Total energy consumption 0.002318588170008272 J
+
+L1 cache energy consumption 0.0013010842000086046 J
+L1 data cache energy consumption 0.0002245997000006332 J
+L1 total data cache access: 172400
+L1 data cache misses: 369
+L1 instruction cache energy consumption 0.0010764845000069414 J
+L1 total instruction cache access: 827600
+L1 instruction cache misses: 465
+
+L2 cache energy consumption 0.00082013344999967 J
+L2 total access: 48947
+L2 cache misses: 743
+
+DRAM energy consumption 0.00019737051999999764 J
+DRAM total access: 743
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 023.eqntott.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 989571.4999762397 ns
+Total energy consumption 0.003075719885007276 J
+
+L1 cache energy consumption 0.0013029549000086185 J
+L1 data cache energy consumption 0.00030198610000120623 J
+L1 total data cache access: 230241
+L1 data cache misses: 2056
+L1 instruction cache energy consumption 0.0010009688000063822 J
+L1 total instruction cache access: 769759
+L1 instruction cache misses: 217
+
+L2 cache energy consumption 0.0013490691849986692 J
+L2 total access: 80142
+L2 cache misses: 1595
+
+DRAM energy consumption 0.00042369579999998816 J
+DRAM total access: 1595
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 989571.4999762397 ns
+Total energy consumption 0.003075719885007276 J
+
+L1 cache energy consumption 0.0013029549000086185 J
+L1 data cache energy consumption 0.00030198610000120623 J
+L1 total data cache access: 230241
+L1 data cache misses: 2056
+L1 instruction cache energy consumption 0.0010009688000063822 J
+L1 total instruction cache access: 769759
+L1 instruction cache misses: 217
+
+L2 cache energy consumption 0.0013490691849986692 J
+L2 total access: 80142
+L2 cache misses: 1595
+
+DRAM energy consumption 0.00042369579999998816 J
+DRAM total access: 1595
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 989571.4999762397 ns
+Total energy consumption 0.003075719885007276 J
+
+L1 cache energy consumption 0.0013029549000086185 J
+L1 data cache energy consumption 0.00030198610000120623 J
+L1 total data cache access: 230241
+L1 data cache misses: 2056
+L1 instruction cache energy consumption 0.0010009688000063822 J
+L1 total instruction cache access: 769759
+L1 instruction cache misses: 217
+
+L2 cache energy consumption 0.0013490691849986692 J
+L2 total access: 80142
+L2 cache misses: 1595
+
+DRAM energy consumption 0.00042369579999998816 J
+DRAM total access: 1595
+
+---------------------------------------------------------------------------------------
+
+OUTPUT FOR TRACE FILE: 034.mdljdp2.din
+SIMULATION COMPLETE
+L2 Associativity:  2
+Total time: 906183.4999800741 ns
+Total energy consumption 0.002783759205007751 J
+
+L1 cache energy consumption 0.0013033241000086212 J
+L1 data cache energy consumption 0.000302762200001212 J
+L1 total data cache access: 231457
+L1 data cache misses: 1437
+L1 instruction cache energy consumption 0.0010005619000063792 J
+L1 total instruction cache access: 768543
+L1 instruction cache misses: 1120
+
+L2 cache energy consumption 0.0011005699049991395 J
+L2 total access: 65259
+L2 cache misses: 1422
+
+DRAM energy consumption 0.00037986519999999 J
+DRAM total access: 1430
+
+SIMULATION COMPLETE
+L2 Associativity:  4
+Total time: 905728.4999800739 ns
+Total energy consumption 0.0027813519400077505 J
+
+L1 cache energy consumption 0.0013033241000086212 J
+L1 data cache energy consumption 0.000302762200001212 J
+L1 total data cache access: 231457
+L1 data cache misses: 1437
+L1 instruction cache energy consumption 0.0010005619000063792 J
+L1 total instruction cache access: 768543
+L1 instruction cache misses: 1120
+
+L2 cache energy consumption 0.0011005533999991395 J
+L2 total access: 65259
+L2 cache misses: 1421
+
+DRAM energy consumption 0.0003774744399999901 J
+DRAM total access: 1421
+
+SIMULATION COMPLETE
+L2 Associativity:  8
+Total time: 905728.4999800739 ns
+Total energy consumption 0.0027813519400077505 J
+
+L1 cache energy consumption 0.0013033241000086212 J
+L1 data cache energy consumption 0.000302762200001212 J
+L1 total data cache access: 231457
+L1 data cache misses: 1437
+L1 instruction cache energy consumption 0.0010005619000063792 J
+L1 total instruction cache access: 768543
+L1 instruction cache misses: 1120
+
+L2 cache energy consumption 0.0011005533999991395 J
+L2 total access: 65259
+L2 cache misses: 1421
+
+DRAM energy consumption 0.0003774744399999901 J
+DRAM total access: 1421
 
 
 
