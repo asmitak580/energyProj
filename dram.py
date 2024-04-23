@@ -6,23 +6,15 @@ class DRAM:
         self.transfer_energy = transfer_energy  / (1 * 1e12) # in W
         self.l1_idle = l1_idle
         self.l2_idle = l2_idle
-        # self.energy_consumed = 0.0
+        self.access_count = 0
 
     def access(self, access_type, address, data=None):
-        # if access_type == '1':  # Write access
-        #     self.energy_consumed += self.write_energy()
-        # else:
-        #     self.energy_consumed += self.read_energy()
-
+        self.access_count += 1
         return self.read_write_energy()
     
     #return energy used to read from dram including idle l1 and l2 power
     def read_write_energy(self):
-        return (self.active_power + self.transfer_energy + self.l1_idle + self.l2_idle) * self.read_write_time 
-
-    #return energy used to write from dram including idle l1 and l2 power
-    # def write_energy(self):
-    #     return (self.active_power + self.transfer_energy + self.l1_idle + self.l2_idle) * self.read_write_time  # Convert ns to seconds
+        return ((self.active_power + self.l1_idle + self.l2_idle) * self.read_write_time) + self.transfer_energy
     
     #return time it takes to read/write in seconds
     def time_to_read_write(self):

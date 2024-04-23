@@ -14,9 +14,13 @@ class L1Cache:
         self.data_cache = [CacheLine() for _ in range(self.num_data_sets)]
         self.num_instr_sets = data_size // (block_size)
         self.instruction_cache = [CacheLine() for _ in range(self.num_instr_sets)]
+        self.access_count = 0
+        self.instruction_miss_count = 0
+        self.data_miss_count = 0
 
     #accessing a address in the cache, returns if it was a miss or hit and the energy consumed
     def access(self, access_type, address, data=None):
+        self.access_count += 1
         tag, index, _ = self.extract_address(address)
         if access_type == '2':  # Instruction fetch
             cache_line = self.instruction_cache[index]
@@ -38,8 +42,10 @@ class L1Cache:
         tag, index, _ = self.extract_address(address)
         if access_type == '2':  # Instruction fetch
             set_cache = self.instruction_cache
+            self.instruction_miss_count += 1
         else:  # Data read or write
             set_cache = self.data_cache
+            self.data_miss_count += 1
 
         replaced_cache_line = set_cache[index]
 
@@ -69,7 +75,7 @@ class L1Cache:
     #return power used by dram for memory accesses in W
     def l1_access_power(self):
         return self.active_power
-
+    
     @staticmethod
     def log2(x):
         return x.bit_length() - 1 if x > 0 else 0

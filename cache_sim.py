@@ -25,13 +25,13 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
     total_dram_energy = 0
     total_energy = 0
     total_time = 0
-    l1_misses = 0
-    l2_misses = 0
-    count = 0
+    # l1_misses = 0
+    # l2_misses = 0
+    # count = 0
     #loop through all the addresses
     #for each address
     for access_type, address, data in addresses:
-        count += 1
+        # count += 1
         #if it is a read == '0' or instruction fetch '2'
         if access_type == '0' or access_type == '2':
             #l1 access
@@ -42,7 +42,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
             total_time += l1_cache.time_to_read_write()
             #if miss
             if not hit:
-                l1_misses += 1
+                # l1_misses += 1
                 #l2 access
                 hit, l2_active_energy = l2_cache.access(access_type, address, data)
 
@@ -51,7 +51,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    l2_misses += 1
+                    # l2_misses += 1
                     #dram access
                     dram_active_energy = dram.access(access_type, address, data)
 
@@ -80,7 +80,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
             total_time += l1_cache.time_to_read_write()
             #if miss
             if not hit:
-                l1_misses += 1
+                # l1_misses += 1
                 #l2 access
                 hit, l2_active_energy = l2_cache.access(access_type, address, data)
 
@@ -89,7 +89,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    l2_misses += 1
+                    # l2_misses += 1
                     #dram access
                     dram_active_energy = dram.access(access_type, address, data)
 
@@ -126,7 +126,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
                 total_time += l2_cache.time_to_read_write()
                 #if miss
                 if not hit:
-                    l2_misses += 1
+                    # l2_misses += 1
                     #dram access
                     dram_active_energy = dram.access(access_type, address, data)
 
@@ -152,7 +152,7 @@ def simulate_cache(addresses, l1_cache, l2_cache, dram):
 
 
 
-    return total_energy, total_time, total_l1_energy, total_l2_energy, total_dram_energy, l1_misses, l2_misses, count
+    return total_energy, total_time, total_l1_energy, total_l2_energy, total_dram_energy
 
 def main():
     directory = 'Traces/Spec_Benchmark'
@@ -169,58 +169,54 @@ def main():
                 energy_data = []
                 time_data = []
 
-                for x in range(10):
-                    # Define memory subsystem parameters
-                    l1_instr_size = 32 * 1024  # 32 KB
-                    l1_data_size = 32 * 1024  # 32 KB
-                    l2_size = 256 * 1024  # 256 KB
-                    block_size = 64  # 64 bytes
-                    l1_cache_read_write_time = 0.5  # in ns
-                    l1_cache_idle_power = 0.5  # in W
-                    l1_cache_active_power = 1  # in W
-                    l2_cache_read_write_time = 5  # in ns
-                    l2_access_cost = 5 # 5pJ
-                    l2_cache_idle_power = 0.8  # in W
-                    l2_cache_active_power = 2  # in W
-                    dram_access_time = 50  # in ns
-                    dram_idle_power = 0.8  # in W
-                    dram_active_power = 4  # in W
-                    dram_transfer_energy = 640  # in pJ
+                # Define memory subsystem parameters
+                l1_instr_size = 32 * 1024  # 32 KB
+                l1_data_size = 32 * 1024  # 32 KB
+                l2_size = 256 * 1024  # 256 KB
+                block_size = 64  # 64 bytes
+                l1_cache_read_write_time = 0.5  # in ns
+                l1_cache_idle_power = 0.5  # in W
+                l1_cache_active_power = 1  # in W
+                l2_cache_read_write_time = 5  # in ns
+                l2_transfer_energy = 5 # 5pJ
+                l2_cache_idle_power = 0.8  # in W
+                l2_cache_active_power = 2  # in W
+                dram_access_time = 50  # in ns
+                dram_idle_power = 0.8  # in W
+                dram_active_power = 4  # in W
+                dram_transfer_energy = 640  # in pJ
 
-                    # Create cache and memory objects
-                    l1_cache = L1Cache(l1_data_size, l1_instr_size, block_size, l1_cache_read_write_time,
-                                    l1_cache_idle_power, l1_cache_active_power, l2_cache_idle_power, dram_idle_power)
-                    l2_cache = L2Cache(l2_size, associativity, block_size, l2_cache_read_write_time,
-                                    l2_cache_idle_power, l2_cache_active_power, l2_access_cost, l1_cache_idle_power, dram_idle_power)
-                    dram = DRAM(dram_access_time, dram_idle_power, dram_active_power, dram_transfer_energy, l1_cache_idle_power, l2_cache_idle_power)
+                # Create cache and memory objects
+                l1_cache = L1Cache(l1_data_size, l1_instr_size, block_size, l1_cache_read_write_time,
+                                l1_cache_idle_power, l1_cache_active_power, l2_cache_idle_power, dram_idle_power)
+                l2_cache = L2Cache(l2_size, associativity, block_size, l2_cache_read_write_time,
+                                l2_cache_idle_power, l2_cache_active_power, l2_transfer_energy, l1_cache_idle_power, dram_idle_power)
+                dram = DRAM(dram_access_time, dram_idle_power, dram_active_power, dram_transfer_energy, l1_cache_idle_power, l2_cache_idle_power)
 
-                    # Read addresses from trace file
-                    addresses = read_addresses(filename)
+                # Read addresses from trace file
+                addresses = read_addresses(filename)
 
-                    energy, time, l1_energy, l2_energy, dram_energy, l1_miss, l2_miss, total_hit_miss = simulate_cache(addresses, l1_cache, l2_cache, dram)
+                energy, time, l1_energy, l2_energy, dram_energy = simulate_cache(addresses, l1_cache, l2_cache, dram)
 
-                    energy_data.append(energy)
-                    time_data.append(time)
+                energy_data.append(energy)
+                time_data.append(time)
 
-                # print("Simulation completed.")
-                # print("Associativity: ", associativity)
-                # print("Total time:", time * 1e9, "ns")
-                # print("Total energy consumption", energy, "J")
-                # print("L1 cache energy consumption", l1_energy, "J")
-                # print("L2 cache energy consumption", l2_energy, "J")
-                # print("DRAM energy consumption", dram_energy, "J")
-                # print("L1 misses:", l1_miss)
-                # print("L1 miss rate:", l1_miss / total_hit_miss * 100)
-                # print("L2 misses:", l2_miss)
-                # print("L2 miss rate:", l2_miss / total_hit_miss * 100)
-                
-                # print()
-                print("Associativity:", associativity)
-                print("Average energy across 10 runs:", sum(energy_data) / 10)
-                print("Standard Deviation of energy across 10 runs:", statistics.stdev(energy_data))
-                print("Average time across 10 runs:", sum(time_data) / 10)
-                print("Standard Deviation of time across 10 runs:", statistics.stdev(time_data))
-                print()
+            print("Simulation completed.")
+            print("Total time:", time * 1e9, "ns")
+            print("Total energy consumption", energy, "J")
+            print("L2 Associativity: ", associativity)
+            
+            print("L1 cache energy consumption", l1_energy, "J")
+            print("L2 cache energy consumption", l2_energy, "J")
+            print("DRAM energy consumption", dram_energy, "J")
+            print("L1 data cache misses:", l1_cache.data_miss_count)
+            
+            # print("L1 miss rate:", l1_miss / total_hit_miss * 100)
+            # print("L2 misses:", l2_miss)
+            # print("L2 miss rate:", l2_miss / total_hit_miss * 100)
+            
+            print()
+    
         print()
         print()
 

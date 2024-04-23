@@ -8,13 +8,16 @@ class L2Cache:
         self.read_write_time = read_write_time / 1e9  # convert to seconds
         self.idle_power = idle_power  # in W
         self.active_power = active_power  # in W
-        self.transfer_energy = transfer_energy / (1 * 1e12) # in W
+        self.transfer_energy = transfer_energy / 1e12 # in J
         self.l1_cache_idle_power = l1_cache_idle_power
         self.dram_idle_power = dram_idle_power
         self.num_sets = size // (associativity * block_size)
         self.cache = [[] for _ in range(self.num_sets)]
+        self.access_count = 0
+        self.miss_count = 0
 
     def access(self, access_type, address, data=None):
+        self.access_count += 1
         tag, index, _ = self.extract_address(address)
         set_cache = self.cache[index]
         for block in set_cache:
@@ -28,6 +31,7 @@ class L2Cache:
     #handles putting an address in the cache and writing to it if there was a miss
     def cache_miss_handler(self, access_type, address, data=None):
         # Cache miss
+        self.miss_count += 1
         need_to_write_back = False
         tag, index, _ = self.extract_address(address)
         set_cache = self.cache[index]
@@ -57,7 +61,7 @@ class L2Cache:
 
     #returns the energy consumption for active L2 and idle L1 and DRAM
     def read_write_energy(self):
-        return self.read_write_time * (self.active_power + self.transfer_energy + self.l1_cache_idle_power + self.dram_idle_power)
+        return (self.read_write_time * (self.active_power + self.l1_cache_idle_power + self.dram_idle_power)) + self.transfer_energy
     
     #return time it takes to read/write in seconds
     def time_to_read_write(self):
